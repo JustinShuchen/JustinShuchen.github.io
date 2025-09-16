@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shuchen Zhang (Justin) - Personal Homepage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background: #fafafa;
+    }
+    .container {
+      display: flex;
+    }
+    /* 左侧导航栏 */
+    .sidebar {
+      width: 220px;
+      background: #f0f0f0;
+      min-height: 100vh;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    }
+    .sidebar h2 {
+      font-size: 20px;
+      margin-top: 0;
+      text-align: center;
+    }
+    .sidebar img.avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px auto;
+      object-fit: cover;
+      border: 3px solid #ddd;
+    }
+    .sidebar nav a {
+      display: block;
+      padding: 8px 0;
+      color: #333;
+      text-decoration: none;
+    }
+    .sidebar nav a:hover {
+      color: #007acc;
+    }
+    .sidebar .contact {
+      margin-top: 20px;
+    }
+    .sidebar .contact p {
+      margin: 6px 0;
+      font-size: 14px;
+    }
+    /* 右侧正文 */
+    .main {
+      flex: 1;
+      padding: 40px;
+      background: white;
+    }
+    .main h1 {
+      margin-top: 0;
+      font-size: 26px;
+      color: #2c3e50;
+    }
+    .main h2 {
+      margin-top: 40px;
+      color: #2c3e50;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+    .highlight {
+      color: #d9534f;
+      font-weight: bold;
+    }
+    .project-poster {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 左侧导航 -->
+    <div class="sidebar">
+      <!-- 头像 -->
+      <img src="assets/images/portrait.jpg" alt="Justin Photo" class="avatar">
+
+      <h2>Shuchen Zhang (Justin)</h2>
+      <p>Junior student @ XJTLU<br/>Passionate about AI</p>
+      <p>Love traveling</p>
+
+      <nav>
+        <a href="#bio">Bio</a>
+        <a href="#projects">Projects</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="contact">
+        <p>📧 <a href="mailto:Shuchen.Zhang25@gmail.com">Shuchen.Zhang25@gmail.com</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/shuchen-zhang-544181355/" target="_blank">LinkedIn</a></p>
+        <p>🐙 <a href="https://github.com/JustinShuchen" target="_blank">GitHub</a></p>
+      </div>
+    </div>
+
+    <!-- 右侧正文 -->
+    <div class="main">
+      <h1>Welcome!</h1>
+      <p>
+        Hey, I'm <b>Shuchen Zhang (Justin)</b>, a junior student at Xi'an Jiaotong-Liverpool University (XJTLU), 
+        also affiliated with University of Liverpool, passionate about 
+        <span class="highlight">Large Language Models (LLMs) and embodied AI</span>.
+      </p>
+      <p>
+        My research interests lie at the intersection of AI and real-world applications, 
+        with a particular focus on foundation models, multimodal learning, and intelligent agents.
+      </p>
+      <p class="highlight">
+        I am actively seeking research opportunities worldwide related to LLMs, embodied AI, and real-world applications.
+      </p>
+
+      <h2 id="bio">Bio</h2>
+      <p>
+        - Junior student at Xi'an Jiaotong-Liverpool University<br/>
+        - Passionate about LLMs, embodied AI, and their real-world applications.
+      </p>
+
+      <h2 id="projects">Projects</h2>
+      <h3>LLM-Based Embodied Task Planning</h3>
+      <p>
+        Multi-modal understanding of industrial tasks is crucial for intelligent operations.
+        This project presents an end-to-end multi-modal data generation and task planning pipeline covering 10 representative tasks.  
+        The pipeline integrates real and AI-generated images, YOLO-World-based auto-annotation, 
+        and GPT-driven instruction generation into a unified JSON schema.
+        Built on Qwen2.5-VL-78 with LoRA fine-tuning, the system produces image-instruction-plan triplets 
+        and enables efficient reasoning.
+        Experiments demonstrate strong consistency and generalization, 
+        providing effective support for multi-modal intelligence in industrial applications.
+      </p>
+      <p>Key contributions of this project include:</p>
+      <ul>
+        <li>Design logical instructions for actions.</li>
+        <li>Use ChatGPT to generate images for training.</li>
+        <li>Develop a task planning agent based on Large Language Models.</li>
+      </ul>
+      <img src="assets/images/surf-poster-llm.jpg" alt="Project Poster" class="project-poster">
+
+      <h2 id="courses">Courses</h2>
+      <p>I have participated in courses such as:</p>
+      <ul>
+        <li>CPT103 - Introduction to Programming in Java</li>
+        <li>INT102 - Algorithmic Foundations and Problem Solving</li>
+        <li>IOM103 - Artificial Intelligence In Business</li>
+        <li>CPT203 - Software Engineering I</li>
+        <li>IOM205 - Advanced Database Management</li>
+      </ul>
+
+      <h2 id="contact">Contact</h2>
+      <p>📧 Email: <a href="mailto:Shuchen.Zhang25@gmail.com">Shuchen.Zhang25@gmail.com</a></p>
+      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/shuchen-zhang-544181355/" target="_blank">linkedin.com/in/shuchen-zhang-544181355</a></p>
+      <p>🐙 GitHub: <a href="https://github.com/JustinShuchen" target="_blank">github.com/JustinShuchen</a></p>
+    </div>
+  </div>
+</body>
+</html>
